@@ -3,7 +3,7 @@
 你可以使用以下命令来查看特定分支内的文件：
 
 ```bash
-bashgit ls-tree -r <branch-name>
+git ls-tree -r <branch-name>
 ```
 
 将`<branch-name>`替换为你想要查看的分支的名称。执行这个命令后，会列出该分支内的所有文件和目录。
@@ -15,7 +15,7 @@ bashgit ls-tree -r <branch-name>
 看起来你想要删除Test1/1.txt这个文件，你可以使用以下命令来删除该文件并提交更改：
 
 ```bash
-bashgit rm Test1/1.txt
+git rm Test1/1.txt
 git commit -m "Remove Test1/1.txt"
 git push origin <branch-name>
 ```
@@ -31,14 +31,14 @@ git push origin <branch-name>
 首先，确保你在本地main分支上，并且拉取了最新的更改：
 
 ```bash
-bashgit checkout main
+git checkout main
 git pull origin main
 ```
 
 然后，切换到教程分支并合并main分支的内容：
 
 ```bash
-bashgit checkout 教程
+git checkout 教程
 git merge main
 ```
 
@@ -47,7 +47,7 @@ git merge main
 最后，将教程分支的更改推送到远程仓库：
 
 ```bash
-bashgit push origin 教程
+git push origin 教程
 ```
 
 这样就可以将main分支的内容同步到教程分支了。
