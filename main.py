@@ -1,19 +1,16 @@
 class Animal:
-    def __init__(self, name):
+    def __init__(self,name):
         self.name = name
-        
     def feed(self):
-        pass
-    
+        self.say()
     def say(self):
         pass
 
 class Cat(Animal):
-    def feed(self):
-        self.say()
-        
+    def __init__(self,name):
+        super().__init__(name)
     def say(self):
-        print("喵喵，我是" + self.name)
+        print(f"喵喵，我是{self.name}")
 
 class Dog(Animal):
     def feed(self):
