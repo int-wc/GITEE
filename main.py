@@ -27,6 +27,7 @@ class Person:
         if isinstance(animal, Animal):
             animal.feed()
 
+
 # 生成实例并调用方法
 cat = Cat("布丁")
 dog = Dog("旺财")
